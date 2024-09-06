@@ -9,7 +9,7 @@ scanf("%d%d",&n, &m);
 
 int arr1[n];
 int arr2[m];
-int arr3[50];
+int arr3[n+m];
 int i,j;
 printf("Enter the element in arr1:\n");
 for(i=0;i<n;i++)
@@ -25,18 +25,14 @@ for(j=0;j<m;j++)
  {
   arr3[i]=arr1[i];
  }
- for(j=n;j<n+m;j++)
+ for(j=0;j<m;j++)
  {
-  arr3[j]=arr2[j];
+  arr3[n+j]=arr2[j];
  }
   printf("merges array is:\n");
    for(int k=0;k<n+m;k++)
    {
    printf("%d\t",arr3[k]);
    }
-
-
-
 return 0;
 }
-

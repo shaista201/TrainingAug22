@@ -1,10 +1,11 @@
+//1. WAP to get the position of a substring in a string
 #include<stdio.h>
 
 int main()
 {
-int n;
-printf("Enter the no. of array elements:\n");
-scanf("%d",&n);
+char str;
+printf("Enter the str:\n");
+scanf("%c",&str);
 
 int arr[n];
 printf("Enter the array elements:\n");
