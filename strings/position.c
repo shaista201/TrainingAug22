@@ -14,7 +14,7 @@ len = strlen(str);
 if(len>0 && str[len-1]=='\n')
 {
    str[len-1] = '\0';
-   len--;
+  // len--;
  }
 char substr[MAX];
 printf("Enter a string:\n");
@@ -23,7 +23,7 @@ len = strlen(substr);
 if(len>0 && substr[len-1]=='\n')
 {
    substr[len-1] = '\0';
-  len--;
+ // len--;
  }
 
 char *pos;
