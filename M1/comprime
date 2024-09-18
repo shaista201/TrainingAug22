@@ -1,0 +1,52 @@
+/*Assume your brother studies in class 2. He has to  complete his homework on co-primes. As an elder sibling help him in finding whether the given two numbers is co-prime or not.
+
+Input Description:
+You will be given two numbers ‘n’ and ‘m’
+
+Output Description:
+Your task is to tell whether numbers is co prime or not. If it is a co-prime print 1 else 0
+
+Sample Input :
+3 5
+Sample Output :
+1*/
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+    // Write C code here
+    int a,b;
+    printf("Enter value of a and b\n");
+    scanf("%d%d",&a,&b);
+    
+    if(a>b)
+    {
+        if(b!=0)
+        {
+           if(a%b==0)
+          {
+            printf("%d",0);
+          }
+          else
+           printf("%d",1);
+        }else
+         printf("out of bound\n");
+    }
+    else{
+        if(a!=0)
+        {
+            if(b%a==0)
+           {
+            printf("%d",0);
+            }
+            else{
+             printf("%d",1);
+            }
+        }
+        else{
+            printf("Out of bound\n");
+        }
+    }
+    return 0;
+
+}
